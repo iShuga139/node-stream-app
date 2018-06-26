@@ -1,0 +1,45 @@
+{
+  "name": "receiver",
+  "version": "0.0.0",
+  "description": "Express app to receive post request from client in stream mode",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "mocha",
+    "clean:install": "rm -rf node_modules && npm i",
+    "coverage": "nyc mocha",
+    "coverage:open": "open ./coverage/lcov-report/index.html"
+  },
+  "keywords": [
+    "stream",
+    "post",
+    "request",
+    "express",
+    "json"
+  ],
+  "author": "Jonathan Estrada <jeaworks@gmail.com>",
+  "contributors": [],
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "eslint": "~5.0.0",
+    "eslint-config-standard": "~11.0.0",
+    "eslint-plugin-import": "~2.13.0",
+    "eslint-plugin-node": "~6.0.1",
+    "eslint-plugin-promise": "~3.8.0",
+    "eslint-plugin-standard": "~3.1.0",
+    "mocha": "~5.2.0",
+    "nyc": "~12.0.2",
+    "sinon": "~6.0.1",
+    "supertest": "~3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "express": "~4.16.3"
+  },
+  "engines": {
+    "node": "^6"
+  }
+}
