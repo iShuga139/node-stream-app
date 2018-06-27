@@ -1,9 +1,13 @@
 # Logs
 logs
 *.log
+!sample_event_stream.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*.sort
+*.gz
 
 # Runtime data
 pids

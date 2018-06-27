@@ -8,7 +8,7 @@ require('chai').should()
 let consoleSpy
 
 describe('Server', () => {
-  context('/event', function () {
+  context('/event', () => {
     beforeEach(() => {
       consoleSpy = sinon.spy(console, 'log')
     })
@@ -17,7 +17,7 @@ describe('Server', () => {
       consoleSpy.restore()
     })
 
-    it('should return 200', function (done) {
+    it('should return HTTP code 200', (done) => {
       const app = require('../../src/app')(config)
 
       request(app)
@@ -34,7 +34,7 @@ describe('Server', () => {
         })
     })
 
-    it('should return a HTTP 413 error', function (done) {
+    it('should return an error HTTP code 413', (done) => {
       config.request.limit = '1b'
       const app = require('../../src/app')(config)
 

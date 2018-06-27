@@ -1,11 +1,10 @@
 # RECEIVED
 
-Express app that receives POST request from the client
+Application that streams data through a POST request to a server
 
 ## Table of Contents
 
 - [Development Installation](#Development%20Installation)
-- [Exposed Resources](#Exposed%20Resources)
 - [Testing](#Testing)
 - [Authors / Contributors](#authors-contributors)
 
@@ -16,7 +15,7 @@ Express app that receives POST request from the client
 
   ```bash
   $ git clone git@github.com:iShuga139/node-stream-app.git
-  $ cd node-stream-app/receiver
+  $ cd node-stream-app/sender
   ```
 
 2. Install dependencies:
@@ -30,14 +29,6 @@ Express app that receives POST request from the client
   ```bash
   $ npm start
   ```
-
-The App will be accessible from your computer on http://localhost:[port] with the port defined in defaults.json
-
-<a name="Exposed Resources"></a>
-## Endpoints
-
-- POST /event
-  that receive a JSON object in the body
 
 <a name="Testing"></a>
 ## Testing
