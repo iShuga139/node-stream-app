@@ -1,6 +1,6 @@
 # RECEIVED
 
-Application that streams data through POST request to a server
+Application that streams data through a POST request to a server
 
 ## Table of Contents
 

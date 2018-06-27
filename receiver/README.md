@@ -1,6 +1,6 @@
 # RECEIVED
 
-Express app to receive post request from client in stream mode
+Express app that receives POST request from the client
 
 ## Table of Contents
 
