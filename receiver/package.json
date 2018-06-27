@@ -1,6 +1,6 @@
 {
   "name": "receiver",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Express app to receive post request from client in stream mode",
   "main": "index.js",
   "scripts": {
