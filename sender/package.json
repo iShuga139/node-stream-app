@@ -1,0 +1,33 @@
+{
+  "name": "sender",
+  "version": "1.0.0",
+  "description": "Stream client to post data by HTTP request",
+  "main": "index.js",
+  "scripts": {
+    "start": "cat ../sample_event_stream.log | node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "mocha",
+    "clean:install": "rm -rf node_modules && npm i",
+    "coverage": "nyc mocha",
+    "coverage:open": "open ./coverage/lcov-report/index.html"
+  },
+  "author": "Jonathan Estrada <jeaworks@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.87.0",
+    "split": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "eslint": "~5.0.1",
+    "eslint-config-standard": "~11.0.0",
+    "eslint-plugin-import": "~2.13.0",
+    "eslint-plugin-node": "~6.0.1",
+    "eslint-plugin-promise": "~3.8.0",
+    "eslint-plugin-standard": "~3.1.0",
+    "mocha": "~5.2.0",
+    "nock": "~9.3.3",
+    "nyc": "~12.0.2"
+  }
+}
