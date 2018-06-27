@@ -1,4 +1,4 @@
-## NEXT
+## 1.0.0
 
 - Improve client to execute POST request
 

@@ -1,6 +1,6 @@
 {
   "name": "sender",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Stream client to post data by HTTP request",
   "main": "index.js",
   "scripts": {
